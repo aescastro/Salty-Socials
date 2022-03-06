@@ -1,0 +1,40 @@
+#header {
+    background-color: #68AFF0;
+    color: white;
+    font-family: Secular One;
+    font-style: normal;
+    font-weight: normal;
+}
+
+#footer {
+    background-color: #68AFF0;
+    position: absolute;
+    bottom: 0px;
+    margin:0%;
+    height: 5%;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #68AFF0 !important;
+    border-color: #68AFF0 !important;
+}
+
+.sub {
+    font-family: 'Scada', sans-serif;
+}
+
+.option{
+    display: inline;
+    font-family: 'Scada', sans-serif;
+    font-size: small;
+    position: relative;
+    color: white;
+    right: 0%;
+    vertical-align: middle;
+}
+
+#login {
+    margin: 0%;
+}
+
+
