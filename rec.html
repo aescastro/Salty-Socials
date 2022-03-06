@@ -23,37 +23,28 @@
     </div>
 
     <div class="mx-auto" style="width: 80%">
-        <!-- <div class="row">
-            <div class="tweet">
-                <div class="tweet-info">
-
-                    <div class="container-fluid">
-                        <div class="row" >
-                            <span>
-                                <img class="img-fluid rounded"  src="http://pm1.narvii.com/7276/1fbc42300b9e3f386e43985bb5a559c175f876fer1-200-200v2_uhq.jpg">
-                                <span> Mario (@mario123)</span>
-                            </span>
-                            
-                            <p style="margin-top: 10px">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eu eleifend odio, eget vulputate tellus. Aliquam id ante non felis pretium faucibus a ut ante. Vivamus elementum nisl eget egestas auctor. Maecenas suscipit purus non elit consequat mattis. 
-                                Integer lacinia augue elit, in congue massa varius in. 
-                            </p>
-
-                            <span>12/06/05</span>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <div ></div>
-        <div id="container"></div>
-        
-
+        <div id="tw1" ></div>
+        <div id="tw2" ></div>
+        <div id="tw3" ></div>
+        <div id="tw4" ></div>
+        <div id="tw5" ></div>
+        <div id="tw6" ></div>
+        <div id="tw7" ></div>
+        <div id="tw8" ></div>
+        <div id="tw9" ></div>
+        <div id="tw10" ></div>
     </div>
 
     <div class="row">
-        <h1 id="footer">
+        <div class="col text-center" >
+            <button type="button" class="btn btn-primary" style="margin: 5px" onclick="reload">
+                <h3 class="sub">Load More!</h3>
+            </button>
+        </div>
+    </div>
+
+    <div class="row">
+        <h1 id="footer-rec">
             <div class="row" style="height:5%">
                 <div class="col-sm-9"></div>
                 <div class="col-sm-2 align-self-center">
@@ -67,6 +58,14 @@
         </h1>
     </div>
 </div>
+
+<!-- load more tweets -->
+<script>
+    function reload() {
+
+    }
+
+</script>
 
 <!-- setup to embed twitter -->
 <script sync src="https://platform.twitter.com/widgets.js"></script>
@@ -89,7 +88,16 @@
   }(document, "script", "twitter-wjs"));
 
   //to embed tweet!!! first arg is twitter id
-  twttr.widgets.createTweet('20',document.getElementById('container'),{theme: 'light'});
+  twttr.widgets.createTweet('20',document.getElementById('tw1'),{theme: 'light'}, {align: 'center'});
+  twttr.widgets.createTweet('21',document.getElementById('tw2'),{theme: 'light'}, {align: 'center'});
+  twttr.widgets.createTweet('22',document.getElementById('tw3'),{theme: 'light'}, {align: 'center'});
+  twttr.widgets.createTweet('23',document.getElementById('tw4'),{theme: 'light'}, {align: 'center'});
+  twttr.widgets.createTweet('24',document.getElementById('tw5'),{theme: 'light'}, {align: 'center'});
+  twttr.widgets.createTweet('25',document.getElementById('tw6'),{theme: 'light'}, {align: 'center'});
+  twttr.widgets.createTweet('26',document.getElementById('tw7'),{theme: 'light'}, {align: 'center'});
+  twttr.widgets.createTweet('27',document.getElementById('tw8'),{theme: 'light'}, {align: 'center'});
+  twttr.widgets.createTweet('28',document.getElementById('tw9'),{theme: 'light'}, {align: 'center'});
+  twttr.widgets.createTweet('29',document.getElementById('tw10'),{theme: 'light'}, {align: 'center'});
   </script>
 
 
