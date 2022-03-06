@@ -23,6 +23,10 @@
     </div>
 
     <div class="mx-auto" style="width: 80%">
+        <div class="spinner-border text-primary" id="buffer" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+
         <div id="tw1" ></div>
         <div id="tw2" ></div>
         <div id="tw3" ></div>
@@ -96,6 +100,8 @@
     return t;
   }(document, "script", "twitter-wjs"));
 
+  var loaded = false;
+
   //to embed tweet!!! first arg is twitter id
     twttr.widgets.createTweet('20',document.getElementById('tw1'),{theme: 'light'}, {align: 'center'});
     twttr.widgets.createTweet('21',document.getElementById('tw2'),{theme: 'light'}, {align: 'center'});
@@ -106,7 +112,14 @@
     twttr.widgets.createTweet('26',document.getElementById('tw7'),{theme: 'light'}, {align: 'center'});
     twttr.widgets.createTweet('27',document.getElementById('tw8'),{theme: 'light'}, {align: 'center'});
     twttr.widgets.createTweet('28',document.getElementById('tw9'),{theme: 'light'}, {align: 'center'});
-    twttr.widgets.createTweet('29',document.getElementById('tw10'),{theme: 'light'}, {align: 'center'});
+    twttr.widgets.createTweet('29',document.getElementById('tw10'),{theme: 'light'}, {align: 'center'}).then(function (el) {
+        loaded = true;
+    });
+
+    if (loaded) {
+        document.getElementById("buffer")
+    }
+    
   </script>
 
 

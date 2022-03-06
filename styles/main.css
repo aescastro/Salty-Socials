@@ -6,6 +6,11 @@
     font-weight: normal;
 }
 
+#buffer{
+    position: relative;
+    left: 50%;
+}
+
 #footer-html {
     background-color: #68AFF0;
     position: absolute;
