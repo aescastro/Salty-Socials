@@ -47,13 +47,18 @@
         <h1 id="footer-rec">
             <div class="row" style="height:5%">
                 <div class="col-sm-9"></div>
-                <div class="col-sm-2 align-self-center">
-                    <h3 class="option">change filters</h3>
-                </div>
-
-                <div class="col-sm-1 align-self-center">
-                    <h3 class="option">logout</h3>
-                </div>
+                <span>
+                    <div style="float: right">
+                        <button type="button" class="btn btn-primary" style="margin: 5px;" onclick="reload">
+                            <h3 class="option">change filters</h3>
+                        </button>
+                    
+                    
+                        <button type="button" class="btn btn-primary" style="margin: 5px; " onclick="logout">
+                            <h3 class="option">logout</h3>
+                        </button>
+                    </div>
+                </span>
             </div>
         </h1>
     </div>
@@ -62,6 +67,10 @@
 <!-- load more tweets -->
 <script>
     function reload() {
+
+    }
+
+    function logout() {
 
     }
 
@@ -88,16 +97,16 @@
   }(document, "script", "twitter-wjs"));
 
   //to embed tweet!!! first arg is twitter id
-  twttr.widgets.createTweet('20',document.getElementById('tw1'),{theme: 'light'}, {align: 'center'});
-  twttr.widgets.createTweet('21',document.getElementById('tw2'),{theme: 'light'}, {align: 'center'});
-  twttr.widgets.createTweet('22',document.getElementById('tw3'),{theme: 'light'}, {align: 'center'});
-  twttr.widgets.createTweet('23',document.getElementById('tw4'),{theme: 'light'}, {align: 'center'});
-  twttr.widgets.createTweet('24',document.getElementById('tw5'),{theme: 'light'}, {align: 'center'});
-  twttr.widgets.createTweet('25',document.getElementById('tw6'),{theme: 'light'}, {align: 'center'});
-  twttr.widgets.createTweet('26',document.getElementById('tw7'),{theme: 'light'}, {align: 'center'});
-  twttr.widgets.createTweet('27',document.getElementById('tw8'),{theme: 'light'}, {align: 'center'});
-  twttr.widgets.createTweet('28',document.getElementById('tw9'),{theme: 'light'}, {align: 'center'});
-  twttr.widgets.createTweet('29',document.getElementById('tw10'),{theme: 'light'}, {align: 'center'});
+    twttr.widgets.createTweet('20',document.getElementById('tw1'),{theme: 'light'}, {align: 'center'});
+    twttr.widgets.createTweet('21',document.getElementById('tw2'),{theme: 'light'}, {align: 'center'});
+    twttr.widgets.createTweet('22',document.getElementById('tw3'),{theme: 'light'}, {align: 'center'});
+    twttr.widgets.createTweet('23',document.getElementById('tw4'),{theme: 'light'}, {align: 'center'});
+    twttr.widgets.createTweet('24',document.getElementById('tw5'),{theme: 'light'}, {align: 'center'});
+    twttr.widgets.createTweet('25',document.getElementById('tw6'),{theme: 'light'}, {align: 'center'});
+    twttr.widgets.createTweet('26',document.getElementById('tw7'),{theme: 'light'}, {align: 'center'});
+    twttr.widgets.createTweet('27',document.getElementById('tw8'),{theme: 'light'}, {align: 'center'});
+    twttr.widgets.createTweet('28',document.getElementById('tw9'),{theme: 'light'}, {align: 'center'});
+    twttr.widgets.createTweet('29',document.getElementById('tw10'),{theme: 'light'}, {align: 'center'});
   </script>
 
 
